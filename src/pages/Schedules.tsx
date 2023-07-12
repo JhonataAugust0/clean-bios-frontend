@@ -10,7 +10,7 @@ export const Schedules = () => {
   }, []);
 
   const handleRemove = (id: string) => {
-    fetch(`https://cleanbios-back-end.onrender.com//Schedule/Remove?id=${id}`, {
+    fetch(`https://cleanbios-back-end.onrender.com/Schedule/Remove?id=${id}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ export const Schedules = () => {
   };
 
   const loadSchedules = () => {
-    fetch('https://cleanbios-back-end.onrender.com//Schedule/Listing', {
+    fetch('https://cleanbios-back-end.onrender.com/Schedule/Listing', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
