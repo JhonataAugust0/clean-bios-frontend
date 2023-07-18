@@ -16,7 +16,7 @@ export const Login = () => {
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(formData[key as keyof typeof formData]))
       .join('&');
 
-    fetch('https://cleanbios-back-end.onrender.com/User/Login', {
+    fetch('https://cleanbios-back-end-hhz2.onrender.com/User/Login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

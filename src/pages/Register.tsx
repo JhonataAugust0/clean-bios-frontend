@@ -10,7 +10,7 @@ export const Register = () => {
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(formData[key]))
       .join('&');
 
-    fetch('https://cleanbios-back-end.onrender.com/User/Register', {
+    fetch('https://cleanbios-back-end-hhz2.onrender.com/User/Register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

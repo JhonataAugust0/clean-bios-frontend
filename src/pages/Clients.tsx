@@ -9,7 +9,7 @@ export const Clients = () => {
   }, []);
 
   const handleRemove = (id: string) => {
-    fetch(`https://cleanbios-back-end.onrender.com/User/Remove?id=${id}`, {
+    fetch(`https://cleanbios-back-end-hhz2.onrender.com/User/Remove?id=${id}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ export const Clients = () => {
   };
 
   const loadClients = () => {
-    fetch('https://cleanbios-back-end.onrender.com/User/Listing', {
+    fetch('https://cleanbios-back-end-hhz2.onrender.com/User/Listing', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

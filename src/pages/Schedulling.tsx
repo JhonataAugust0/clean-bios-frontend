@@ -16,7 +16,7 @@ export const Schedulling = () => {
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(formData[key as keyof typeof formData]))
       .join('&');
 
-    fetch('https://cleanbios-back-end.onrender.com/Schedule/Register', {
+    fetch('https://cleanbios-back-end-hhz2.onrender.com/Schedule/Register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
